@@ -6,10 +6,7 @@
   
   Se delegó la tarea de las operaciones para que fuera más sencillo modificar el programa y agregar más operaciones como multiplicaciones o divisiones. Se tiene un supertipo llamado <Operaciones> en las cuales se pueden implementar las operaciones que se requieran; para este ejercicio solo se implementaron las operaciones Suma y Resta.
   
-  # Integrantes:
-    Pablo Garzona     
-    1503309
-    Luis Makepeace
-    1567612
-    Andy Velásquez
-    1584613
+## Integrantes:
+  -Pablo Garzona    1503309
+  -Luis Makepeace   1567612
+  -Andy Velásquez   1584613
