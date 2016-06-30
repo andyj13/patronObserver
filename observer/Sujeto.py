@@ -1,9 +1,7 @@
 class Sujeto:
-    def __init__(self):
-        self.observadores = []
 
     def registrar(self, observador):
-        self.observadores.append(observador)
+        pass
 
     def notificar(self):
         pass

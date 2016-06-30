@@ -1,6 +1,5 @@
-import numpy as np
-import Operaciones
-
+from Operaciones import Operaciones
 class Resta(Operaciones):
+
     def operacion(self, vector):
-        pass
+        self.total = 0
