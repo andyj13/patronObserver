@@ -5,7 +5,7 @@ from A import A
 def main():
     sujeto = A()
     observadorSuma = Observador("Suma", sujeto)
-    observadorResta = Observador("Resta", sujeto)
+    observadorResta = Observador("Todas", sujeto)
 
     array1 = [4,2,1]
     array2 = [10,5,1,3]
