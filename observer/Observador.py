@@ -3,8 +3,11 @@ class Observador:
         self.operador = operador
         sujeto.registrar(self)
 
-    def actualizar(self, suma, resta):
-        if self.operador == "Suma":
-            print "Se detecto una suma con el resultado: " + suma
-        if self.operador == "Resta":
-            print "Se detecto una resta con el resultado: " + resta
+    def actualizar(self, suma, resta, op):
+        if self.operador == "Suma" and op == 1:
+            print "Se detecto una suma con el resultado: " + str(suma)
+        if self.operador == "Resta" and op == 2:
+            print "Se detecto una resta con el resultado: " + str(resta)
+        elif op == 3:
+            print "Se detecto una suma con el resultado: " + str(suma)
+            print "Se detecto una resta con el resultado: " + str(resta)

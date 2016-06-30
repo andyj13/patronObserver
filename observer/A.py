@@ -22,19 +22,19 @@ class A(Sujeto):
     def operar(self, op, b):
         if op == 1:
             self.suma.operacion(b)
-            self.notificar(self.suma.total, 0)
+            self.notificar(self.suma.total, 0, 1)
         if op == 2:
             self.resta.operacion(b)
-            self.notificar(0, self.resta.total)
+            self.notificar(0, self.resta.total, 2)
         if op == 3:
             self.suma.operacion(b)
             self.resta.operacion(b)
-            self.notificar(self.suma.total, self.resta.total)
+            self.notificar(self.suma.total, self.resta.total, 3)
 
 
     def registrar(self, observador):
         self.observadores.append(observador)
 
-    def notificar(self, suma, resta):
+    def notificar(self, suma, resta, op):
         for o in self.observadores:
-            o.actualizar(suma, resta)
+            o.actualizar(suma, resta, op)
